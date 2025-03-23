@@ -1,0 +1,12 @@
+export default function formatMessage(
+  msg: string,
+  userID: string,
+  thisConversationID: string
+) {
+  return {
+    message: msg,
+    userID: userID,
+    time: new Date().toString(),
+    conversationID: thisConversationID,
+  };
+}
