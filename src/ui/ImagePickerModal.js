@@ -1,17 +1,5 @@
 import {useState} from 'react';
-import {
-  Text,
-  View,
-  StyleSheet,
-  Pressable,
-  Modal,
-  TextInput,
-  KeyboardAvoidingView,
-  TouchableOpacity,
-} from 'react-native';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import {url} from '../../../../../hooks/useUrl';
-import axios from 'axios';
+import {Text, View, StyleSheet, Pressable, Modal} from 'react-native';
 
 export default function ImagePickerModal({
   isVisible,

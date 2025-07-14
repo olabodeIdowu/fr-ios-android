@@ -189,7 +189,7 @@ function FLWCardPayment({navigation, route: {params}}) {
       <TouchableOpacity
         style={styles.button}
         onPress={chargeCard}
-        activeOpacity={0.4}>
+        activeOpacity={0.7}>
         {isLoading ? (
           <View style={styles.horizontal}>
             <ActivityIndicator />
@@ -268,7 +268,7 @@ export function HandleUserPin({navigation, route: {params}}) {
       <TouchableOpacity
         style={styles.button}
         onPress={handleUserPin}
-        activeOpacity={0.4}>
+        activeOpacity={0.7}>
         {isLoading ? (
           <View style={styles.horizontal}>
             <ActivityIndicator />
@@ -336,7 +336,7 @@ export function HandleUserOTP({navigation, route: {params}}) {
       <TouchableOpacity
         style={styles.button}
         onPress={handleUserOTP}
-        activeOpacity={0.4}>
+        activeOpacity={0.7}>
         {isLoading ? (
           <View style={styles.horizontal}>
             <ActivityIndicator />
@@ -445,7 +445,7 @@ export function HandleAVSAuthorization({navigation, route: {params}}) {
       <TouchableOpacity
         style={styles.button}
         onPress={handleUserAVS}
-        activeOpacity={0.4}>
+        activeOpacity={0.7}>
         {isLoading ? (
           <View style={styles.horizontal}>
             <ActivityIndicator />

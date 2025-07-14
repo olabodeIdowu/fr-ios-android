@@ -60,7 +60,7 @@ export default function Event({navigation}) {
           ) : (
             <TouchableOpacity
               onPress={() => setPaid(!paid)}
-              activeOpacity={0.4}>
+              activeOpacity={0.7}>
               <Text style={styles.detailsButtonText}>Details</Text>
             </TouchableOpacity>
           )}
@@ -173,7 +173,7 @@ export default function Event({navigation}) {
               onPress={() => {
                 setShowPopupEventModal(true);
               }}
-              activeOpacity={0.4}>
+              activeOpacity={0.7}>
               <Text style={styles.acceptButtonText}>Attend Event</Text>
             </TouchableOpacity>
             <TouchableOpacity
@@ -181,7 +181,7 @@ export default function Event({navigation}) {
               // onPress={() => {
               //   setShowPopupEventModal(false);
               // }}
-              activeOpacity={0.4}>
+              activeOpacity={0.7}>
               <Text style={styles.rejectButtonText}>Decline Event</Text>
             </TouchableOpacity>
           </View>

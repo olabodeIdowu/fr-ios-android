@@ -12,7 +12,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import {axiosInstance} from '../../../hooks/useAxios';
+import {axiosInstance} from '../../../../../hooks/useAxios';
 
 export default function PopUpUnmatchModal({
   navigation,

@@ -6,7 +6,6 @@
  */
 import React, {useContext, useEffect, useState} from 'react';
 import {
-  View,
   StatusBar,
   StyleSheet,
   useColorScheme,
@@ -41,6 +40,22 @@ import CoachDetailsScreen from './src/pages/dashboard/screens/coaches/CoachDetai
 import CoachAvailabilityScreen from './src/pages/dashboard/screens/coaches/CoachAvailabilityScreen';
 import Notifications from './src/pages/dashboard/screens/dashboard/components/Notifications';
 import ProfileScreen from './src/pages/dashboard/screens/profile/ProfileScreen';
+import AvatarCreator from './src/features/avatars/avatarCreator';
+import PageB from './src/pages/about/pageB';
+import Onboarding1 from './src/pages/onboarding/Onboarding1';
+import Onboarding2 from './src/pages/onboarding/Onboarding2';
+import Onboarding3 from './src/pages/onboarding/Onboarding3';
+import RegistrationScreen1 from './src/pages/onboarding/RegistrationScreen1';
+import RegistrationScreen2 from './src/pages/onboarding/RegistrationScreen2';
+import VerifyOTPScreen from './src/pages/onboarding/VerificationScreen';
+import RegistrationScreen3 from './src/pages/onboarding/RegistrationScreen3';
+import VerifyNIN from './src/pages/onboarding/VerifyNIN';
+import RegistrationScreen4 from './src/pages/onboarding/RegistrationScreen4';
+import RegistrationScreen5 from './src/pages/onboarding/RegistrationScreen5';
+import RegistrationScreen6 from './src/pages/onboarding/RegistrationScreen6';
+import SelectLanguage from './src/pages/onboarding/SelectLanguage';
+import SelectInterest from './src/pages/onboarding/SelectInterest';
+import Location from './src/pages/onboarding/Location';
 
 const Stack = createNativeStackNavigator();
 const {StatusBarManager} = NativeModules;
@@ -86,11 +101,11 @@ const NavigationStack = () => {
 
   return (
     <Stack.Navigator
-      initialRouteName={!userToken ? 'page-a' : 'home-screen'}
+      initialRouteName={'page-a'}
+      // initialRouteName={!userToken ? 'page-a' : 'home-screen'}
       screenOptions={{
         header: () => null,
       }}>
-      <Stack.Screen name="page-a" component={PageA} />
       <Stack.Screen name="home-screen" component={HomeScreen} />
       <Stack.Screen name="People" component={PeopleScreen} />
       <Stack.Screen name="Stories" component={ChatProfileScreen} />
@@ -105,6 +120,23 @@ const NavigationStack = () => {
         name="CoachAvailabilityScreen"
         component={CoachAvailabilityScreen}
       />
+      <Stack.Screen name="page-a" component={PageA} />
+      <Stack.Screen name="page-b" component={PageB} />
+      <Stack.Screen name="Onboarding-1" component={Onboarding1} />
+      <Stack.Screen name="Onboarding-2" component={Onboarding2} />
+      <Stack.Screen name="Login-Signup" component={Onboarding3} />
+      <Stack.Screen name="Registration-1" component={RegistrationScreen1} />
+      <Stack.Screen name="VerifyOTPScreen" component={VerifyOTPScreen} />
+      <Stack.Screen name="Registration-2" component={RegistrationScreen2} />
+      <Stack.Screen name="Registration-3" component={RegistrationScreen3} />
+      <Stack.Screen name="VerifyNINScreen" component={VerifyNIN} />
+      <Stack.Screen name="Registration-4" component={RegistrationScreen4} />
+      <Stack.Screen name="Registration-5" component={RegistrationScreen5} />
+      <Stack.Screen name="Registration-6" component={RegistrationScreen6} />
+      <Stack.Screen name="GetLocation" component={Location} />
+      <Stack.Screen name="SelectLanguage" component={SelectLanguage} />
+      <Stack.Screen name="SelectInterest" component={SelectInterest} />
+      <Stack.Screen name="create-avatar" component={AvatarCreator} />
       <Stack.Screen name="NotificationScreen" component={Notifications} />
       <Stack.Screen name="register" component={RegisterScreen} />
       <Stack.Screen name="login" component={LoginScreen} />

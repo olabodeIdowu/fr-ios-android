@@ -70,7 +70,7 @@ export default function RegisterScreen({navigation, route: {params}}) {
               onPress={() => {
                 navigation.goBack();
               }}
-              activeOpacity={0.4}>
+              activeOpacity={0.7}>
               <MaterialCommunityIcons
                 name="arrow-left-thin"
                 color="#fff"
@@ -109,7 +109,7 @@ export default function RegisterScreen({navigation, route: {params}}) {
             <View style={styles.nav}>
               <TouchableOpacity
                 onPress={() => setClickEmailSignup(false)}
-                activeOpacity={0.4}>
+                activeOpacity={0.7}>
                 <MaterialCommunityIcons
                   name="arrow-left-thin"
                   color="#fff"
@@ -195,7 +195,7 @@ export default function RegisterScreen({navigation, route: {params}}) {
                     onPress={() =>
                       navigation.navigate('terms-condition-screen')
                     }
-                    activeOpacity={0.4}>
+                    activeOpacity={0.7}>
                     <Text
                       style={{
                         color: '#007FFF',

@@ -4,7 +4,7 @@ import {StyleSheet, Text, View, SafeAreaView, Image} from 'react-native';
 export default function PageA({navigation, route: {params}}) {
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigation.replace('login');
+      navigation.replace('page-b');
     }, 2000);
     return () => clearTimeout(timer);
   }, [navigation]);
@@ -14,9 +14,9 @@ export default function PageA({navigation, route: {params}}) {
       <View style={styles.main}>
         <Image
           style={styles.logo}
-          source={require('./../../../assets/ddLogo.png')}
+          source={require('./../../../assets/FRREDLOGO.jpg')}
         />
-        <Text style={styles.subtitle}>Be For Real</Text>
+        <Text style={styles.subtitle}>Finders Republic</Text>
       </View>
     </SafeAreaView>
   );
@@ -37,21 +37,16 @@ const styles = StyleSheet.create({
     marginHorizontal: 'auto',
   },
   logo: {
-    width: 300,
-    height: 400,
+    width: 100,
+    height: 100,
   },
 
   subtitle: {
+    fontFamily: 'Avenir',
     // margin: 'auto',
-    // width: 200,
-    // borderWidth: 5,
-    // borderColor: '#fff',
-    // marginTop: 400,
-    // fontSize: 42,
-    // fontWeight: 'bold',
-    // textAlign: 'center',
-    // color: '#ffffff',
-    // borderTopRightRadius: 30,
-    // borderBottomRightRadius: 30,
+    fontSize: 42,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: '#000000',
   },
 });

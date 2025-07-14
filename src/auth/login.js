@@ -75,7 +75,7 @@ export default function LoginScreen({navigation, route: {params}}) {
             onPress={() => {
               // navigation.goBack();
             }}
-            activeOpacity={0.4}>
+            activeOpacity={0.7}>
             <MaterialCommunityIcons name="home" color="#333333" size={26} />
           </TouchableOpacity>
           <Text style={styles.loginNavText}>Log in with email</Text>
@@ -105,7 +105,7 @@ export default function LoginScreen({navigation, route: {params}}) {
         </View>
         <TouchableOpacity
           onPress={() => navigation.navigate('forgot-password-screen')}
-          activeOpacity={0.4}>
+          activeOpacity={0.7}>
           <Text
             style={{
               color: '#0099FF',
@@ -120,7 +120,7 @@ export default function LoginScreen({navigation, route: {params}}) {
         <Pressable
           style={styles.continueButton}
           onPress={login}
-          activeOpacity={0.4}>
+          activeOpacity={0.7}>
           {isLoading ? (
             <View style={styles.horizontal}>
               <ActivityIndicator />

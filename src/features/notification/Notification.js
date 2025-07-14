@@ -16,7 +16,7 @@ function Notification({navigation}) {
         onPress={() => {
           navigation.navigate('WaitList');
         }}
-        activeOpacity={0.4}>
+        activeOpacity={0.7}>
         <Text style={styles.buttonText}>Notify me</Text>
       </TouchableOpacity>
       <TouchableOpacity
@@ -24,7 +24,7 @@ function Notification({navigation}) {
         onPress={() => {
           navigation.navigate('PendingList');
         }}
-        activeOpacity={0.4}>
+        activeOpacity={0.7}>
         <Text style={styles.doNotButtonText}>Do not notify me</Text>
       </TouchableOpacity>
     </View>

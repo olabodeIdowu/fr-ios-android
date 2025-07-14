@@ -44,7 +44,7 @@ export default function EventInviteModal({
                 onPress={() => {
                   setShowPopupEventModal(false);
                 }}
-                activeOpacity={0.4}>
+                activeOpacity={0.7}>
                 <Text style={styles.buttonText}>ok</Text>
               </TouchableOpacity>
             </View>

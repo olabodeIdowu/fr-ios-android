@@ -76,7 +76,7 @@ export default function UpdateEmailScreen({route: {params}}) {
         <TouchableOpacity
           style={styles.button}
           onPress={changeEmail}
-          activeOpacity={0.4}>
+          activeOpacity={0.7}>
           {isLoading ? (
             <View style={styles.horizontal}>
               <ActivityIndicator />

@@ -69,7 +69,7 @@ export default function CoachDetailsScreen({navigation}) {
           <TouchableOpacity
             style={styles.button}
             onPress={() => navigation.navigate('CoachAvailabilityScreen')}
-            activeOpacity={0.4}>
+            activeOpacity={0.7}>
             <Text style={styles.buttonText}>Check Availability</Text>
           </TouchableOpacity>
           <View>

@@ -221,7 +221,7 @@ export default function CoachAvailabilityScreen({navigation}) {
 
             hidePaymentOptionsModal(true);
           }}
-          activeOpacity={0.4}>
+          activeOpacity={0.7}>
           <Text style={styles.buttonText}>Book session</Text>
         </TouchableOpacity>
         {showPopupBookedModal && (

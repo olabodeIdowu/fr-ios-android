@@ -68,7 +68,7 @@ export default function Notifications({navigation}) {
               marginTop: 5,
               fontWeight: 'medium',
               fontSize: 14,
-              fontWeight: 400,
+              fontWeight: '400',
             }}>
             Mentor Kwashi Kweri accepted you request
           </Text>
@@ -91,7 +91,7 @@ export default function Notifications({navigation}) {
               fontFamily: 'Rubik',
               padding: 10,
               fontSize: 14,
-              fontWeight: 400,
+              fontWeight: '400',
             }}>
             Grace Ume, Theophilus Neni and 3 others reacted to your comment...
           </Text>
@@ -214,7 +214,7 @@ export default function Notifications({navigation}) {
               fontFamily: 'Rubik',
               padding: 10,
               fontSize: 14,
-              fontWeight: 400,
+              fontWeight: '400',
             }}>
             Grace Ume commented on your post
           </Text>
@@ -327,7 +327,7 @@ export default function Notifications({navigation}) {
             fontFamily: 'Rubik',
             padding: 10,
             fontSize: 14,
-            fontWeight: 400,
+            fontWeight: '400',
             textAlign: 'center',
             padding: 20,
             borderBottomWidth: 0.5,

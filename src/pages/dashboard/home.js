@@ -3,7 +3,6 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import DashboardScreen from './screens/dashboard/DashboardScreen';
 import CoachesScreen from './screens/coaches/CoachesScreen';
 import EventsScreen from './screens/events/EventsScreen';

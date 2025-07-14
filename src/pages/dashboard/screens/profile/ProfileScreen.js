@@ -216,7 +216,7 @@ export default function ProfileScreen({navigation}) {
         onPress={() => {
           setShowPlans(true);
         }}
-        activeOpacity={0.4}>
+        activeOpacity={0.7}>
         <Text style={styles.buttonText}>See all plans</Text>
       </TouchableOpacity>
       {showPlans && (

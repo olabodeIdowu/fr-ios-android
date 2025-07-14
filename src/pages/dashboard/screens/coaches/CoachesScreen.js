@@ -94,7 +94,7 @@ export default function CoachesScreen({navigation}) {
                   color: '#6C6C6C',
                   fontFamily: 'Avenir',
                   fontSize: 14,
-                  fontWeight: 400,
+                  fontWeight: '400',
                   paddingVertical: 5,
                 }}>
                 Dating/psychological coach
@@ -104,7 +104,7 @@ export default function CoachesScreen({navigation}) {
                   color: '#000000',
                   fontFamily: 'Avenir',
                   fontSize: 14,
-                  fontWeight: 400,
+          fontWeight: '400',
                 }}>
                 I aim to drive a reformation amongst the youths
               </Text> */}
@@ -116,7 +116,7 @@ export default function CoachesScreen({navigation}) {
                     color: '#000000',
                     fontFamily: 'Avenir',
                     fontSize: 14,
-                    fontWeight: 400,
+                    fontWeight: '400',
                     paddingVertical: 5,
                   }}>
                   (4.8) from 120 Reviews
@@ -153,7 +153,7 @@ export default function CoachesScreen({navigation}) {
                   color: '#6C6C6C',
                   fontFamily: 'Avenir',
                   fontSize: 14,
-                  fontWeight: 400,
+                  fontWeight: '400',
                   paddingVertical: 5,
                 }}>
                 Dating/psychological coach
@@ -163,7 +163,7 @@ export default function CoachesScreen({navigation}) {
                   color: '#000000',
                   fontFamily: 'Avenir',
                   fontSize: 14,
-                  fontWeight: 400,
+             fontWeight: '400',
                 }}>
                 I aim to drive a reformation amongst the youths
               </Text> */}
@@ -175,7 +175,7 @@ export default function CoachesScreen({navigation}) {
                     color: '#000000',
                     fontFamily: 'Avenir',
                     fontSize: 14,
-                    fontWeight: 400,
+                    fontWeight: '400',
                     paddingVertical: 5,
                     paddingVertical: 5,
                   }}>
@@ -214,7 +214,7 @@ export default function CoachesScreen({navigation}) {
                   color: '#6C6C6C',
                   fontFamily: 'Avenir',
                   fontSize: 14,
-                  fontWeight: 400,
+                  fontWeight: '400',
                   paddingVertical: 5,
                 }}>
                 Dating/psychological coach
@@ -224,7 +224,7 @@ export default function CoachesScreen({navigation}) {
                   color: '#000000',
                   fontFamily: 'Avenir',
                   fontSize: 14,
-                  fontWeight: 400,
+                fontWeight: '400',
                 }}>
                 I aim to drive a reformation amongst the youths
               </Text> */}
@@ -236,7 +236,7 @@ export default function CoachesScreen({navigation}) {
                     color: '#000000',
                     fontFamily: 'Avenir',
                     fontSize: 14,
-                    fontWeight: 400,
+                    fontWeight: '400',
                     paddingVertical: 5,
                     paddingVertical: 5,
                   }}>
@@ -274,7 +274,7 @@ export default function CoachesScreen({navigation}) {
                   color: '#6C6C6C',
                   fontFamily: 'Avenir',
                   fontSize: 14,
-                  fontWeight: 400,
+                  fontWeight: '400',
                   paddingVertical: 5,
                 }}>
                 Dating/psychological coach
@@ -284,7 +284,7 @@ export default function CoachesScreen({navigation}) {
                   color: '#000000',
                   fontFamily: 'Avenir',
                   fontSize: 14,
-                  fontWeight: 400,
+              fontWeight: '400',
                 }}>
                 I aim to drive a reformation amongst the youths
               </Text> */}
@@ -296,7 +296,7 @@ export default function CoachesScreen({navigation}) {
                     color: '#000000',
                     fontFamily: 'Avenir',
                     fontSize: 14,
-                    fontWeight: 400,
+                    fontWeight: '400',
                     paddingVertical: 5,
                     paddingVertical: 5,
                   }}>

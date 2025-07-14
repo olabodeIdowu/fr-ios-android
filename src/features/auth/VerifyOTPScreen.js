@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import {useContext, useEffect, useState} from 'react';
 import {
   Alert,
   TextInput,
@@ -8,29 +8,29 @@ import {
   View,
   ActivityIndicator,
   Pressable,
-} from "react-native";
-import axios from "axios";
-import { url } from "../../hooks/useUrl";
-import AsyncStorage from "@react-native-async-storage/async-storage";
+} from 'react-native';
+import axios from 'axios';
+import {url} from '../../hooks/useUrl';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
-export default function VerifyOTPScreen({ navigation }) {
+export default function VerifyOTPScreen({navigation}) {
   const [isLoading, setIsLoading] = useState(false);
   const [user, setUser] = useState(null);
-  const [codeOne, setCodeOne] = useState("");
-  const [codeTwo, setCodeTwo] = useState("");
-  const [codeThree, setCodeThree] = useState("");
-  const [codeFour, setCodeFour] = useState("");
-  const [codeFive, setCodeFive] = useState("");
-  const [codeSix, setCodeSix] = useState("");
+  const [codeOne, setCodeOne] = useState('');
+  const [codeTwo, setCodeTwo] = useState('');
+  const [codeThree, setCodeThree] = useState('');
+  const [codeFour, setCodeFour] = useState('');
+  const [codeFive, setCodeFive] = useState('');
+  const [codeSix, setCodeSix] = useState('');
   const [resendClick, setResendClick] = useState(false);
 
   // console.log(user);
 
   useEffect(() => {
     async function handle() {
-      const storedAppUser = JSON.parse(await AsyncStorage.getItem("user"));
+      const storedAppUser = JSON.parse(await AsyncStorage.getItem('user'));
       if (!storedAppUser) {
-        navigation.navigate("Login");
+        navigation.navigate('Login');
       } else {
         //store in context
         setUser(storedAppUser);
@@ -47,7 +47,7 @@ export default function VerifyOTPScreen({ navigation }) {
       // );
       // const response = await axios({
       //   method: "post",
-      //   url: `${url}/dedott/api/v1/users/verify-user-email-OTP`,
+      //   url: `${url}/fr/api/v1/users/verify-user-email-OTP`,
       //   data: {
       //     emailOTP:
       //       codeOne + codeTwo + codeThree + codeFour + codeFive + codeSix,
@@ -58,11 +58,11 @@ export default function VerifyOTPScreen({ navigation }) {
       // });
       // setIsLoading(false);
       // if (!response) throw new Error("response not found");
-      navigation.navigate("Registration3");
+      navigation.navigate('Registration2');
     } catch (error) {
       setIsLoading(false);
       console.log(error);
-      Alert.alert("Error", error.message, [{ text: "OK" }]);
+      Alert.alert('Error', error.message, [{text: 'OK'}]);
     }
   }
 
@@ -70,36 +70,35 @@ export default function VerifyOTPScreen({ navigation }) {
     try {
       setResendClick(true);
       const response = await axios({
-        method: "post",
-        url: `${url}/dedott/api/v1/users/resend-user-verification-email`,
+        method: 'post',
+        url: `${url}/fr/api/v1/users/resend-user-verification-email`,
         data: {
           email: user?.email,
         },
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
       });
       // setLoading(false)
-      if (!response) throw new Error("response not found");
+      if (!response) throw new Error('response not found');
       console.log(response?.message);
     } catch (error) {
       // setLoading(false)
       console.log(error);
-      Alert.alert("Error", error.message, [{ text: "OK" }]);
+      Alert.alert('Error', error.message, [{text: 'OK'}]);
     }
   }
 
   return (
     <View style={styles.container}>
-      <Text
+      <TouchableOpacity
         onPress={() => {
-          navigation.navigate("ForgotPin");
-        }}
-        style={styles.backText}
-      >
-        &larr;
-      </Text>
-      <View style={{ flex: 0.8, justifyContent: "center" }}>
+          //  Go back to the previous screen.
+          navigation.goBack();
+        }}>
+        <Text style={styles.backText}>&larr;</Text>
+      </TouchableOpacity>
+      <View style={{flex: 0.8, justifyContent: 'center'}}>
         <Text style={styles.headerText}>Enter Code</Text>
         {resendClick ? (
           <Text style={styles.secondaryHeaderText}>
@@ -114,37 +113,37 @@ export default function VerifyOTPScreen({ navigation }) {
         <View style={styles.numberContainer}>
           <TextInput
             style={styles.input}
-            onChangeText={(text) => setCodeOne(text)}
+            onChangeText={text => setCodeOne(text)}
             value={codeOne}
             maxLength={1}
           />
           <TextInput
             style={styles.input}
-            onChangeText={(text) => setCodeTwo(text)}
+            onChangeText={text => setCodeTwo(text)}
             value={codeTwo}
             maxLength={1}
           />
           <TextInput
             style={styles.input}
-            onChangeText={(text) => setCodeThree(text)}
+            onChangeText={text => setCodeThree(text)}
             value={codeThree}
             maxLength={1}
           />
           <TextInput
             style={styles.input}
-            onChangeText={(text) => setCodeFour(text)}
+            onChangeText={text => setCodeFour(text)}
             value={codeFour}
             maxLength={1}
           />
           <TextInput
             style={styles.input}
-            onChangeText={(text) => setCodeFive(text)}
+            onChangeText={text => setCodeFive(text)}
             value={codeFive}
             maxLength={1}
           />
           <TextInput
             style={styles.input}
-            onChangeText={(text) => setCodeSix(text)}
+            onChangeText={text => setCodeSix(text)}
             value={codeSix}
             maxLength={1}
           />
@@ -154,8 +153,7 @@ export default function VerifyOTPScreen({ navigation }) {
           style={styles.button}
           onPress={handleVerifyOTP}
           //onPress={() => navigation.navigate("Registration3")}
-          activeOpacity={0.4}
-        >
+          activeOpacity={0.7}>
           {isLoading ? (
             <View style={styles.horizontal}>
               <ActivityIndicator />
@@ -165,25 +163,33 @@ export default function VerifyOTPScreen({ navigation }) {
           )}
         </TouchableOpacity>
 
-        <Text style={{ color: "#ffffff", padding: 30, textAlign: "center" }}>
+        <Text
+          style={{
+            fontFamily: 'Avenir',
+            color: '#333333',
+            fontWeight: '400',
+            padding: 30,
+            textAlign: 'center',
+          }}>
           We send you code to your email {user?.email}. You can check your
           inbox.
         </Text>
         <View
-          style={{ flexDirection: "row", justifyContent: "center", gap: 5 }}
-        >
+          style={{
+            fontFamily: 'Avenir',
+            flexDirection: 'row',
+            justifyContent: 'center',
+            fontWeight: '400',
+            gap: 5,
+          }}>
           <Text
             style={{
-              color: "#ffffff",
-            }}
-          >
+              color: '#333333',
+            }}>
             I didn't received the code?
           </Text>
 
-          <Text
-            onPress={resendEmailVerificationOTP}
-            style={{ color: "#D9A525" }}
-          >
+          <Text onPress={resendEmailVerificationOTP} style={{color: '#D9A525'}}>
             Send again
           </Text>
         </View>
@@ -195,37 +201,36 @@ export default function VerifyOTPScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#000000",
+    backgroundColor: '#000000',
   },
 
   backText: {
-    color: "#ffffff",
     fontSize: 36,
-    marginTop: 20,
-    marginLeft: 10,
+    color: '#000000',
+    fontFamily: 'Avenir',
   },
 
   headerText: {
-    color: "#ffffff",
-    alignItems: "center",
-    justifyContent: "center",
+    color: '#333',
+    alignItems: 'center',
+    justifyContent: 'center',
     fontSize: 30,
     margin: 10,
   },
 
   secondaryHeaderText: {
-    color: "#777",
-    alignItems: "center",
-    justifyContent: "center",
+    color: '#777',
+    alignItems: 'center',
+    justifyContent: 'center',
     fontSize: 14,
     margin: 15,
   },
 
   numberContainer: {
     flex: 0.1,
-    alignItems: "center",
-    flexDirection: "row",
-    justifyContent: "space-around",
+    alignItems: 'center',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
     marginTop: 20,
     marginBottom: 30,
   },
@@ -235,30 +240,30 @@ const styles = StyleSheet.create({
     height: 44,
     borderWidth: 0.2,
     padding: 15,
-    backgroundColor: "#D9D9D9",
+    backgroundColor: '#D9D9D9',
     borderRadius: 6,
-    textAlign: "center",
+    textAlign: 'center',
   },
 
   button: {
-    width: "95%",
-    alignItems: "center",
-    backgroundColor: "#D9A525",
+    width: '95%',
+    alignItems: 'center',
+    backgroundColor: '#D9A525',
     padding: 15,
-    marginLeft: "auto",
-    marginRight: "auto",
-    color: "#222",
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    color: '#222',
     borderRadius: 8,
     marginTop: 20,
   },
 
   buttonText: {
-    color: "#000000",
+    color: '#000000',
     fontSize: 20,
   },
   horizontal: {
-    flexDirection: "row",
-    justifyContent: "space-around",
+    flexDirection: 'row',
+    justifyContent: 'space-around',
     padding: 10,
   },
 });

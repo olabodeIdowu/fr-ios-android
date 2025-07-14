@@ -146,7 +146,7 @@ export default function LanguagesModal({openLanguages, setOpenLanguages}) {
             <TouchableOpacity
               style={styles.button}
               onPress={submitLanguages}
-              activeOpacity={0.4}>
+              activeOpacity={0.7}>
               <Text style={styles.buttonText}>Done</Text>
             </TouchableOpacity>
           </ScrollView>

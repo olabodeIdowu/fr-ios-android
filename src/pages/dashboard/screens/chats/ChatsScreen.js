@@ -302,7 +302,7 @@ const ChatsScreen = () => {
                       padding: '0.8rem',
                       color: '#ffffff',
                       fontSize: 14,
-                      fontWeight: 400,
+                      fontWeight: '400',
                     }}>
                     {c?.firstName}
                   </Text>
@@ -374,7 +374,7 @@ const ChatsScreen = () => {
                       padding: '0.8rem',
                       color: '#ffffff',
                       fontSize: 14,
-                      fontWeight: 400,
+                      fontWeight: '400',
                     }}>
                     {l?.firstName}
                   </Text>

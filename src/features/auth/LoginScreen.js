@@ -112,7 +112,7 @@ export default function LoginScreen({navigation}) {
         <TouchableOpacity
           style={styles.button}
           onPress={handleLogin}
-          activeOpacity={0.4}>
+         
           {isLoading ? (
             <View style={styles.horizontal}>
               <ActivityIndicator />

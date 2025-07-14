@@ -51,7 +51,7 @@ export default function Onboarding2({navigation}) {
           onPress={() => {
             navigation.navigate('Login');
           }}
-          activeOpacity={0.4}>
+          activeOpacity={0.7}>
           <Text style={styles.buttonText}>Next &rarr;</Text>
         </TouchableOpacity>
       </View>

@@ -230,6 +230,7 @@ export default function ChatRoom() {
         ' meteringEnabled',
         meteringEnabled,
       );
+      
       // const result = await audioRecorderPlayer.startRecorder(path, audioSet, meteringEnabled);
 
       const uri = await audioRecorderPlayer.startRecorder(

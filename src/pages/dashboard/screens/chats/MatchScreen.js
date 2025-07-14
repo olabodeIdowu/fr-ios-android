@@ -113,7 +113,7 @@ function MatchScreen() {
                 image: route?.params?.currentChat?.avatar,
               })
             }
-            activeOpacity={0.4}>
+            activeOpacity={0.7}>
             <Text style={styles.buttonText}>Say Hello</Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -121,7 +121,7 @@ function MatchScreen() {
             onPress={() => {
               navigation.goBack();
             }}
-            activeOpacity={0.4}>
+            activeOpacity={0.7}>
             <Text style={styles.cancelButtonText}>Skip</Text>
           </TouchableOpacity>
         </View>

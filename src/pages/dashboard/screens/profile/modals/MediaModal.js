@@ -212,7 +212,7 @@ export default function MediaModal({user, setUser, openMedia, setOpenMedia}) {
           <TouchableOpacity
             style={styles.addMedia}
             onPress={() => setVisible(true)}
-            activeOpacity={0.4}>
+            activeOpacity={0.7}>
             <Text style={styles.addMediaText}>Add Media</Text>
           </TouchableOpacity>
           <ScrollView showsVerticalScrollIndicator={false}>

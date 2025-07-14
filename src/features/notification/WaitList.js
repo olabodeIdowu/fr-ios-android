@@ -36,7 +36,7 @@ function WaitList({navigation}) {
           onPress={() => {
             setShowEmail(true);
           }}
-          activeOpacity={0.4}>
+          activeOpacity={0.7}>
           <Text style={styles.buttonText}>Send notification to my mail</Text>
         </TouchableOpacity>
         <View style={styles.progressBarContainer}>
@@ -49,7 +49,7 @@ function WaitList({navigation}) {
           onPress={() => {
             setShowPhone(true);
           }}
-          activeOpacity={0.4}>
+          activeOpacity={0.7}>
           <Text style={styles.doNotButtonText}>
             Send notification to my number
           </Text>

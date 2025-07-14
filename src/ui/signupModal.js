@@ -50,13 +50,13 @@ function SignupModalScreen() {
         <TouchableOpacity
           onPress={() => navigation.navigate('register')}
           style={styles.signupButton}
-          activeOpacity={0.4}>
+          activeOpacity={0.7}>
           <Text style={styles.signupButtonText}>Sign up</Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => navigation.navigate('login')}
           style={styles.loginButton}
-          activeOpacity={0.4}>
+          activeOpacity={0.7}>
           <Text style={styles.loginButtonText}>Log in</Text>
         </TouchableOpacity>
       </ImageBackground> */}
